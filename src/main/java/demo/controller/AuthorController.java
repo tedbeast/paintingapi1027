@@ -3,15 +3,14 @@ package demo.controller;
 import demo.entity.Author;
 import demo.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 //Stereotype annotation built on top of @Controller, itself built on top of @Component
 //RestContoller will assume that we want to respond with JSON response bodies
+
+@CrossOrigin(origins="http://localhost:3000")
 @RestController
 public class AuthorController {
     AuthorService authorService;
