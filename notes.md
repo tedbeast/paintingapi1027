@@ -18,8 +18,4 @@ Some companies are now even considering spring to be dated, and move beyond it..
 
 -xml config, where a bean definition contains the injected bean in its definition
 
--xml bean values
-
-"What maven command is used to run a spring boot jar"
-
 java -jar
