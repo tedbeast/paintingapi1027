@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 @SpringBootApplication
 public class Application {
     /**
@@ -26,4 +28,14 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(Application.class);
     }
+    /**
+     * Spring provides testing-related annotations, that allow us to introduce the beans existing
+     * in the app context as testable objects, given that we build them using spring's annotation
+     * context, ie we allow spring to wire and inject all of our beans.
+     *
+     * Spring provides actuator, which allows us to have insight into our app by contacting HTTP
+     * endpoints on /actuator/, such as /health and /bean.
+     *
+     * devtools provides auto live-reload, simialr to React
+     */
 }

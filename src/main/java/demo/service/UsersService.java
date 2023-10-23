@@ -11,7 +11,7 @@ public class UsersService {
      * TODO: refactor to checking the database for the matching Users entity.
      */
     public Users shouldPermitLogin(Users users){
-        if(users.getUsername().equals("password") && users.getPassword().equals("password")){
+        if(users.getUsername().equals("username") && users.getPassword().equals("password")){
             return users;
         }else{
             return null;
