@@ -1,5 +1,5 @@
 # all docker images start from some linux template, or, there is another image called 'scratch'
-FROM openjdk:11-jdk-alpine
+FROM eclipse-temurin:17-jdk-alpine
 # run commands in the terminal, same as you would on your computer
 #RUN mvn clean package
 # copy files into the image from this directory
