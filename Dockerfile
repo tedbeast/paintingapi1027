@@ -1,5 +1,5 @@
 # all docker images start from some linux template, or, there is another image called 'scratch'
-FROM ubuntu
+FROM 3.9.5-eclipse-temurin-11
 # run commands in the terminal, same as you would on your computer
 RUN mvn clean package
 # copy files into the image from this directory
