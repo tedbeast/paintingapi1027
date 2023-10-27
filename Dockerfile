@@ -7,4 +7,4 @@ COPY target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
 # define a port for the application
 EXPOSE 9000
 # define the commands that are run when we attempt to run the image
-ENTRYPOINT ["java", "jar", "demo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "demo-0.0.1-SNAPSHOT.jar"]
