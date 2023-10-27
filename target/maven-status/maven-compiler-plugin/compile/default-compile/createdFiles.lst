@@ -1,0 +1,12 @@
+demo\controller\AuthController.class
+demo\entity\Users.class
+demo\service\PaintingService.class
+demo\service\AuthorService.class
+demo\Application.class
+demo\entity\Author.class
+demo\controller\PaintingController.class
+demo\repository\PaintingRepository.class
+demo\controller\AuthorController.class
+demo\repository\AuthorRepository.class
+demo\service\UsersService.class
+demo\entity\Painting.class

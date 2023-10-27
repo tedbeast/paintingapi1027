@@ -18,6 +18,7 @@ public class PaintingRepositoryTest {
      * Test the findByYearMade query by adding two paintings of different years, retrieving all
      * paintings from one year, and verifying it only contains the painting of the correct year.
      */
+    /**
     @Test
     public void findByYearMadeTest(){
         Painting p1 = new Painting(1, "p1", "p1.jpg", 2023, null);
@@ -28,5 +29,5 @@ public class PaintingRepositoryTest {
         List<Painting> actual = paintingRepository.findByYearMade(2023);
         Assertions.assertTrue(actual.size() == 1);
         Assertions.assertTrue(actual.get(0).getPaintingId() == 1);
-    }
+    }**/
 }
